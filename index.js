@@ -8,10 +8,10 @@ const server = express()
 server.use(cors())
 
 // app.listen(3000)
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 server.listen(PORT, () => {
-  console.log('Yankee and the brave are here on 3000')
+  console.log(`Yankee and the brave are here on ${PORT}`)
   
 })
 
